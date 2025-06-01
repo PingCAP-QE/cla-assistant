@@ -5,11 +5,12 @@
 # Docker compose file to get an instance of CLA-assistant quickly up
 # Mainly for development purposes
 # NOT PRODUCTION READY
-version: '3.7'
+version: "3.7"
 services:
   cla-assistant:
     image: cla-assistant
     build: .
+    platform: linux/amd64
     ports:
       - "5000:5000"
     networks:
@@ -21,7 +22,7 @@ services:
     depends_on:
       - cla-db
   cla-db:
-    image: mongo
+    image: mongo:4
     networks:
       - cla
 networks:

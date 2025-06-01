@@ -1,7 +1,7 @@
 {
     "name": "cla-assistant",
     "author": "https://github.com/cla-assistant",
-    "version": "1.8.3",
+    "version": "3.0.0",
     "homepage": "https://cla-assistant.io",
     "description": "Contributor license agreement",
     "keywords": [
@@ -85,8 +85,8 @@
         "webdriverio": "^5.7.2"
     },
     "engines": {
-        "node": "16",
-        "npm": "8"
+        "node": ">=18",
+        "npm": "10"
     },
     "scripts": {
         "build": "node_modules/grunt/bin/grunt build",
